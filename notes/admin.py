@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Note
+from .models import Note, PersonalNote
 
 
 class NoteAdmin(admin.ModelAdmin):
@@ -9,3 +9,4 @@ class NoteAdmin(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(Note, NoteAdmin)
+admin.site.register(PersonalNote)
