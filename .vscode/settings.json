@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/marcoguzman/.local/share/virtualenvs/marcoguzman-oW2GmOBS/bin/python"
+    "python.pythonPath": "/usr/local/opt/python/bin/python3.7",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_django", "--errors-only"]
 }
