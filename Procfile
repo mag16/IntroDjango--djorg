@@ -1,1 +1,1 @@
-web: gunicorn IntroDjangodjorg.wsgi
+web: gunicorn introdjangodjorg.wsgi
