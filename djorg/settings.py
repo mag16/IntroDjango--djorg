@@ -29,9 +29,9 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', cast=bool)
 
-#ALLOWED_HOSTS = config( 'ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split (',')])
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', ['.herokuapp.com'], cast=lambda v: [s.strip() for s in v.split(',')])
 #ALLOWED_HOSTS = ['.herokuapp.com']
-ALLOWED_HOSTS = ['0.0.0.0','localhost','introdjango-djorg.herokuapp.com']
+#ALLOWED_HOSTS = ['0.0.0.0','localhost','introdjango-djorg.herokuapp.com']
 
 # Application definition
 
@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-STATIC_URL = '/static/'
+
 
 
 
@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'djorg.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config("DATABASE_URL", default='sqlite:///db.sqlite3')
+    'default': dj_database_url.config("DATABASE_URL", default=config('DATABASE_URL'))
 }
 
 
