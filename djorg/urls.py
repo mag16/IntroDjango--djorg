@@ -28,7 +28,10 @@ from notes.api import PersonalNoteViewSet
 router = routers.DefaultRouter()
 router.register('notes', PersonalNoteViewSet)
 
+# adding path / to appease heroku (logs)
+
 urlpatterns = [
+    path('/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     re_path(r'^api-token-auth/', views.obtain_auth_token),
