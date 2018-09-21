@@ -24,6 +24,7 @@ from notes.api import PersonalNoteViewSet
 
 
 
+
 router = routers.DefaultRouter()
 router.register('notes', PersonalNoteViewSet)
 

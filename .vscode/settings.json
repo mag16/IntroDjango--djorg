@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.pythonPath": "/Users/marcoguzman/.local/share/virtualenvs/IntroDjango--djorg-GYE0WLYZ/bin/python",
     "python.linting.pylintArgs": ["--load-plugins", "pylint_django", "--errors-only"]
 }
