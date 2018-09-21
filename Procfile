@@ -1,1 +1,1 @@
-web: gunicorn introdjangodjorg.wsgi
+web: gunicorn introdjango--djorg.wsgi
