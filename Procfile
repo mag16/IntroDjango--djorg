@@ -1,1 +1,2 @@
-web: gunicorn introdjango--djorg.wsgi
+web: gunicorn djorg.wsgi
+web: python manage.py runserver
